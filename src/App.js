@@ -1,23 +1,27 @@
 import logo from './logo.svg';
-import './App.css';
+import sample from "./assets/sample_site.jpg.jpg"
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    
+       
+        <h1>
+        Where Vision Meets Reality
+        </h1>
+        <p className=' text-lg w-full max-w-24'>
+        At Spark Social, we believe that every great website begins with a vision. Our portfolio is a collection of dreams turned into stunning digital realities. We’re dedicated to making your aspirations come to life with creativity and precision.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
+        <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample}></img>
+        </div>
+      
       </header>
+
+      <section>
+
+      </section>
     </div>
   );
 }
