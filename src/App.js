@@ -1,5 +1,8 @@
 import logo from './assets/spk_logo.svg';
 import sample from "./assets/sample_site.jpg.jpg"
+import realEstate_01 from "./assets/real-estate-01.jpg"
+import physicalTherapy_01 from "./assets/physical-therapy-01.jpg"
+import law_01 from "./assets/law-01.jpg"
 
 function App() {
   return (
@@ -13,7 +16,7 @@ function App() {
             </a>
             <div class="flex items-center lg:order-2">
               <a href="#" class="text-gray-800 :text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 :hover:bg-gray-700 focus:outline-none :focus:ring-gray-800">+1 407 906 6423 </a>
-              <a href="#" class="text-white bg-blue-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 :bg-primary-600 :hover:bg-primary-700 focus:outline-none :focus:ring-primary-800">Get started</a>
+              <a href="#" class="text-white bg-indigo-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 :bg-primary-600 :hover:bg-primary-700 focus:outline-none :focus:ring-primary-800">Get started</a>
               <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 :text-gray-400 :hover:bg-gray-700 :focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
@@ -50,14 +53,14 @@ function App() {
       <section class="bg-white :bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
           <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full :bg-gray-800 :text-white hover:bg-gray-200 :hover:bg-gray-700" role="alert">
-            <span class="text-xs bg-blue-600 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Metrix application is out! See what's new</span>
+            <span class="text-xs bg-teal-300 rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Metrix application is out! See what's new</span>
             <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
           </a>
           <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl :text-white">Small Town Dreams, Big Market Results</h1>
           <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 :text-gray-400">Here at Spark Social we focus on markets where technology, innovation, and community can unlock long-term value and drive business sucess.</p>
           <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
             <a href="#" class="
-            inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 :focus:ring-blue-900">
+            inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border bg-indigo-700 hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300 :focus:ring-indigo-900">
               View our services
               <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
@@ -104,66 +107,28 @@ function App() {
 
       {/* gallery section */}
       <section>
-        {/* first column */}
+        {/* first row */}
         <div className='flex flex-col justify-center items-center md:flex-row md:flex-wrap'>
-          {/* image wrapper */}
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
+        
+          {/* image card 01 */}
+          <div className='w-1/3  h-full max-h-[500px] overflow-hidden' id='image-wrap'>
+          <a href="https://sparksmagency.github.io/real-estate-framework-01/" target="_blank">
+          <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={realEstate_01} />
+          </a>
           </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
+          {/* image card 02 */}
+          <div className='w-1/3 h-full max-h-[500px] overflow-hidden ' id='image-wrap'>
+          <a href="https://sparksmagency.github.io/physical-therapy-website-framework-01/" target="_blank">
+          <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={physicalTherapy_01} />
+          </a>
           </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
+          {/* image card 03 */}
+          <div className='w-1/3 h-full max-h-[500px] overflow-hidden' id='image-wrap'>
+          <a href="https://sparksmagency.github.io/lawyer-website-framework-01/" target="_blank">
+          <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={law_01} />
+          </a>
           </div>
-
-
-        </div>
-        {/* second column */}
-        <div className='flex flex-col justify-center items-center md:flex-row md:flex-wrap'>
-          {/* image wrapper */}
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
-
-
-        </div>
-        {/* third column */}
-        <div className='flex flex-col justify-center items-center md:flex-row md:flex-wrap'>
-          {/* image wrapper */}
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
-          <div className='w-full max-w-[300px] h-full max-h-[300px] overflow-hidden m-[50px]' id='image-wrap'>
-
-            <img className='w-full h-full object-cover object-top transition-all duration-1000 ease-in-out hover:translate-y-[-300px]' src={sample} />
-
-          </div>
+    
 
 
         </div>
